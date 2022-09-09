@@ -48,6 +48,7 @@ install: all
 	cp -r source/mod-midi-to-cv-mono/mod-midi-to-cv-mono.lv2                 $(LV2_DESTDIR)
 	cp -r source/mod-midi-to-cv-poly/mod-midi-to-cv-poly.lv2                 $(LV2_DESTDIR)
 	cp -r source/mod-button-to-cv/mod-button-to-cv.lv2                       $(LV2_DESTDIR)
+	./copy_modguis.sh                                                        $(LV2_DESTDIR)
 
 clean:
 	$(MAKE) clean -C source/mod-audio-to-cv
